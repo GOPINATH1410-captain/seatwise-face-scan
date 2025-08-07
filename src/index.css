@@ -8,26 +8,48 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 40% 98%;
+    --foreground: 215 25% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 215 85% 20%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 215 85% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 94%;
+    --secondary-foreground: 215 25% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 20% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 215 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Academic theme colors */
+    --academic: 215 85% 20%;
+    --academic-light: 215 85% 35%;
+    --academic-lighter: 215 50% 85%;
+    
+    /* Status colors */
+    --success: 142 70% 45%;
+    --warning: 45 93% 58%;
+    --info: 200 85% 55%;
+    
+    /* Gradients */
+    --gradient-academic: linear-gradient(135deg, hsl(var(--academic)), hsl(var(--academic-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+    
+    /* Shadows */
+    --shadow-academic: 0 10px 30px -10px hsl(var(--academic) / 0.3);
+    --shadow-card: 0 4px 20px -8px hsl(var(--academic) / 0.15);
+    
+    /* Animations */
+    --transition-academic: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -56,26 +78,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 215 30% 8%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 215 30% 10%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 215 30% 10%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 215 85% 65%;
+    --primary-foreground: 215 30% 8%;
+    --primary-glow: 215 85% 75%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 215 25% 15%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 25% 15%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 215 85% 65%;
+    --accent-foreground: 215 30% 8%;
+
+    /* Academic theme colors - dark mode */
+    --academic: 215 85% 65%;
+    --academic-light: 215 85% 75%;
+    --academic-lighter: 215 50% 25%;
+    
+    /* Gradients - dark mode */
+    --gradient-academic: linear-gradient(135deg, hsl(var(--academic)), hsl(var(--academic-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--secondary)));
+    
+    /* Shadows - dark mode */
+    --shadow-academic: 0 10px 30px -10px hsl(var(--academic) / 0.4);
+    --shadow-card: 0 4px 20px -8px hsl(var(--academic) / 0.2);
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
